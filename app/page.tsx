@@ -42,13 +42,14 @@ export default function Home() {
       <div className="frame-line frame-side frame-side-left" aria-hidden="true" />
 
       <header className="site-header">
-        <div className="brand-lockup" dir="ltr">
-          <span className="brand-mark">SM</span>
-          <span className="brand-name">SARVE MANDEGAR</span>
-        </div>
         <div className="header-status">
           <span className="status-dot" />
           <span>رونمایی رسمی</span>
+        </div>
+
+        <div className="brand-lockup" dir="ltr">
+          <span className="brand-mark">SM</span>
+          <span className="brand-name">SARVE MANDEGAR</span>
         </div>
       </header>
 
@@ -72,14 +73,16 @@ export default function Home() {
         >
           <div className="logo-halo" aria-hidden="true" />
           <div className="logo-sweep" aria-hidden="true" />
-          <Image
-            src="/images/file_00000000292c8243af3cf25148e480ca.png"
-            alt="نشان رسمی تندیس نگاران سرو ماندگار"
-            width={896}
-            height={1536}
-            priority
-            className="official-logo"
-          />
+          <div className="gold-frame">
+            <Image
+              src="/images/file_00000000292c8243af3cf25148e480ca.png"
+              alt="نشان رسمی تندیس نگاران سرو ماندگار"
+              width={896}
+              height={1536}
+              priority
+              className="official-logo"
+            />
+          </div>
         </motion.div>
 
         <motion.div
@@ -88,11 +91,11 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p>وب‌سایت رسمی تندیس نگاران سرو ماندگار<br />به‌زودی رونمایی می‌شود.</p>
-          <p className="service-line">طراحی و ساخت لوح تقدیر، تندیس و هدایای سازمانی خاص</p>
+          <p className="launch-line">به‌زودی رونمایی می‌شود.</p>
+          <p className="service-line">طراحی و ساخت لوح تقدیر، تندیس و هدیه‌های سازمانی خاص</p>
           <a className="contact-button" href="tel:+989124470133">
-            <span>تماس با ما</span>
             <span className="button-icon"><ArrowUpLeft size={17} strokeWidth={1.5} /></span>
+            <span>تماس با ما</span>
           </a>
         </motion.div>
       </section>
